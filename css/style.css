@@ -5,4 +5,101 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+/* Header do site */
+header{
+    background-image: url('../images/bg.jpg');
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+}
+
+.logo{
+    background-image: url('../images/logo.png');
+    background-size: 100% 100%;
+    float: left;
+    width: 132px;
+    height: 20px;
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop li.btn-nav{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+
+section.chamada-header{
+    margin: 120px 0;
+}
+
+section.chamada-header h2{
+    font-size: 47px;
+    color: white;
+    font-weight: normal;
+}
+
+section.chamada-header p{
+    font-size: 17px;
+    color: white;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+section.chamada-header form{margin-top: 20px;}
+
+section.chamada-header input[type=email]{
+    display: inline-block;
+    border-radius: 20px;
+    border: 0;
+    height: 35px;
+    width: 237px;
+    padding:0 7px 0 15px;
+}
+
+section.chamada-header input[type=submit]{
+    display: inline-block;
+    border-radius: 20px;
+    border: 0;
+    height: 35px;
+    width: 181px;
+    background-color: #ff5f27;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section.chamada-header input[type=submit]:hover{
+    transform: scale(1.04);
+    background-color: #e75925;
 }
