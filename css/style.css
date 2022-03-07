@@ -19,13 +19,15 @@
 /* Header do site */
 header{
     background-image: url('../images/bg.jpg');
-    min-height: 600px;
+    min-height: 450px;
     background-size: cover;
     background-position: center;
     padding: 30px 0;
 }
 
 .logo{
+    position: relative;
+    z-index: 2;
     background-image: url('../images/logo.png');
     background-size: 100% 100%;
     float: left;
@@ -51,6 +53,14 @@ nav.desktop a{
     text-decoration: none;
 }
 
+nav.mobile h3{
+    color: #fff;
+    cursor: pointer;
+    font-size: 26px;
+    position: relative;
+    z-index: 2;
+}
+
 nav li.btn-nav{
     border: 1px solid white;
     border-radius: 20px;
@@ -61,13 +71,14 @@ nav li.btn-nav{
 nav.mobile{display: none;float: right;}
 
 nav.mobile ul{
-    display: block;
+    display: none;
     background-color: #31475e;
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 0;
+    padding: 70px 0 30px 0;
+    /* list-style-type:none; */
     text-align: center;
 }
 
@@ -132,7 +143,35 @@ section.chamada-header input[type=submit]:hover{
     background-color: #f3622d;
 }
 
+/* SESSÃO DA DESCRIÇÃO */
+.descricao-danki{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.descricao-danki p{
+    display: inline-block;
+    max-width: 680px;
+    font-weight: lighter;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.repudiandae b{
+    color: black;
+}
+
+
+
 @media screen and (max-width: 1024px){
     nav.desktop{display: none;}
     nav.mobile{display: block;}
+
+    section.chamada-header{
+        text-align: center;
+    }
+    section.chamada-header input[type=email]{
+        margin-bottom: 10px;
+    }
+    section.chamada-header p{display: inline-block;}
 }
