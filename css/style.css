@@ -51,11 +51,39 @@ nav.desktop a{
     text-decoration: none;
 }
 
-nav.desktop li.btn-nav{
+nav li.btn-nav{
     border: 1px solid white;
     border-radius: 20px;
     padding: 7px 15px;
     text-transform: uppercase;
+}
+
+nav.mobile{display: none;float: right;}
+
+nav.mobile ul{
+    display: block;
+    background-color: #31475e;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav.mobile li{
+    padding: 10px 0;
+}
+
+nav.mobile li.btn-nav{
+    display: inline-block;
+    padding: 4px 10px;
+}
+
+nav.mobile a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
 }
 
 section.chamada-header{
@@ -101,5 +129,10 @@ section.chamada-header input[type=submit]{
 
 section.chamada-header input[type=submit]:hover{
     transform: scale(1.04);
-    background-color: #e75925;
+    background-color: #f3622d;
+}
+
+@media screen and (max-width: 1024px){
+    nav.desktop{display: none;}
+    nav.mobile{display: block;}
 }
