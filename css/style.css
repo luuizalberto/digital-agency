@@ -155,10 +155,46 @@ section.chamada-header input[type=submit]:hover{
     font-weight: lighter;
     font-size: 22px;
     font-style: italic;
+    line-height: 32px;
 }
 
 .repudiandae b{
     color: black;
+}
+
+/* SESSÃO DA SEGUNDA DESCRIÇÃO */
+section.descricao-danki2{
+    padding: 50px 0;
+}
+
+section.descricao-danki2 > .container{
+    max-width: 960px;
+}
+
+.texto-descricao{
+    padding: 0 15px;
+    float: left;
+    width: 55%;
+}
+
+.texto-descricao h3{
+    color: #31475e;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.texto-descricao p{
+    margin-top: 15px;
+    color: #6a7c92;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section.descricao-danki2 img{
+    float: left;
+    width: 45%;
+    max-width: 500px;
 }
 
 
@@ -174,4 +210,16 @@ section.chamada-header input[type=submit]:hover{
         margin-bottom: 10px;
     }
     section.chamada-header p{display: inline-block;}
+}
+
+@media screen and (max-width: 768px){
+    .texto-descricao{width: 100%;display: block; float: none;}
+    section.descricao-danki2 img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        float: none;
+        max-width: 500px;
+        margin-top: 10px;
+    }
 }
