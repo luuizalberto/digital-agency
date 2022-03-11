@@ -229,7 +229,7 @@ section.descricao-danki3 > .container{
 
 /* SESSÃO DOS SERVIÇOS */
 section.servicos{
-    padding: 85px 0 35px 0;
+    padding: 85px 0 15px 0;
 }
 
 section.servicos > .container{max-width: 1000px;}
@@ -257,7 +257,7 @@ section.servicos > .container{max-width: 1000px;}
     margin: 10px;
     background-color: #fff;
     width: 33.3%;
-    box-shadow: 0px 8px 20px 0px rgb(224,224,224,0.5);
+    box-shadow: 0px 8px 20px 7px rgb(224,224,224,0.5);
     border-radius: 3px;
 }
 
@@ -293,6 +293,49 @@ section.servicos > .container{max-width: 1000px;}
     text-transform: uppercase;
     font-size: 12px;
 }
+
+/* SESSÃO DO PORTIFOLIO */
+section.portifolio{
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+section.portifolio > .container{
+    max-width: 960px;
+    padding: 35px 0 15px 0;
+    background-color: #f7f7f7;
+}
+
+section.portifolio h2{
+    text-align: center;
+    font-weight: normal;
+    color: #31475e;
+}
+
+.empresas{
+    padding: 0 10px;
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.empresa-single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border-style: solid;
+    border-color: #ececec;
+    border-width: 1px 0 1px 1px;
+    padding: 20px 0;
+}
+
+.empresas .empresa-single:last-child{
+    border: 1px solid #ececec;
+}
+
+
+
 
 
 
@@ -349,5 +392,12 @@ section.servicos > .container{max-width: 1000px;}
         margin: 10px auto;
         width: 100%;
         max-width: 400px;
+    }
+
+    .empresa-single{
+        width: 100%;
+        max-width: 640px;
+        margin: 15px auto;
+        border: 1px solid #ececec;
     }
 }
