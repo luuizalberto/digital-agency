@@ -391,6 +391,57 @@ section.formulario form input[type=submit]:hover{
     background-color: #f3622d;
 }
 
+/* RODAPÉ */
+footer{
+    margin: 50px 0;
+}
+
+.box-footer{
+    width: 33.3%;
+    padding: 0 15px;
+    float: left;
+}
+
+.box-footer h3{
+    color: #31475e;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.box-footer p{
+    font-size: 15px;
+    font-weight: lighter;
+    color: #31475e;
+    margin-top: 20px;
+}
+
+.box-footer form{margin-top: 20px;}
+
+.box-footer form input[type=text]{
+    width: 80%;
+    max-width: 200px;
+    height: 43px;
+    border: 1px solid #31475e;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+
+.box-footer button{
+    width: calc(20% - 10px);
+    margin-left: 10px;
+    max-width: 63px;
+    height: 43px;
+    border: 1px solid #31475e;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.box-footer button i{
+    font-size: 18px;
+    color: #31475e;
+}
+
 
 
 
@@ -457,5 +508,15 @@ section.formulario form input[type=submit]:hover{
         max-width: 640px;
         margin: 15px auto;
         border: 1px solid #ececec;
+    }
+
+    .box-footer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .box-footer p{
+        margin-top: 10px;
     }
 }
