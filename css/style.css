@@ -435,12 +435,25 @@ footer{
     background-color: #fff;
     border-radius: 30px;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+.box-footer button:hover{
+    
+    border: 1px solid #ff5f27;
+    color: #ff5f27;
 }
 
 .box-footer button i{
     font-size: 18px;
     color: #31475e;
+    transition: 0.4s;
 }
+
+.box-footer button:hover i{
+    color: #ff5f27;
+}
+
 
 
 
